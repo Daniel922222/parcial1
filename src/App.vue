@@ -1,9 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!--div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
+    </div-->
+
+      <b-navbar type="dark" variant="dark">
+    <b-navbar-nav>
+      <b-nav-item to='/'>Inicio</b-nav-item>
+      <b-nav-item to='tienda'>Tienda</b-nav-item>
+      <b-nav-item to='com'>comunicacion</b-nav-item>
+       <b-nav-item to='Productos'>Productos</b-nav-item>
+    </b-navbar-nav>
+  </b-navbar>
     <router-view/>
   </div>
 </template>
@@ -17,6 +26,7 @@
   color: #2c3e50;
 }
 
+
 #nav {
   padding: 30px;
 }
@@ -29,4 +39,7 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
 </style>
+
